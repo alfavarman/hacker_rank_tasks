@@ -44,8 +44,7 @@
 if __name__ == '__main__':
     set_n = int(input())
     set_elements_space_separated = set(map(int, input().split()))
-    number_of_commands = int(input())
-    for i in range(number_of_commands):
+    for i in range(int(input())):
         x = input()
         if x == 'pop'.casefold():
             set_elements_space_separated.pop()
