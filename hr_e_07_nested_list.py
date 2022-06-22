@@ -53,10 +53,11 @@ if __name__ == '__main__':
         name = input()
         score = float(input())
         class_list.append([name, score])
-    scores_list = []
 
-    for list_l in range(len(class_list)):
-        scores_list.append(class_list[list_l][1])
+    scores_list = [class_list[list_l][1] for list_l in range(len(class_list))]
+
+    # for list_l in range(len(class_list)):
+    #     scores_list.append(class_list[list_l][1])
     scores_list = list(set(scores_list))
     scores_list.sort()
     second_lowest = scores_list[1]
