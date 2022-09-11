@@ -46,20 +46,11 @@ def is_leap(year: int) -> bool:
     :return: True for leap year and False for not leap years
     """
     # leap = False
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                return True
-            else:
-                return False
-        else:
-            return True
-    else:
-        return False
-
+    if year % 4 == 0 and year % 100 == 0 and year % 400 == 0:
+        return True
     # return leap
 
 
 while True:
-    year = int(input())
-    print(is_leap(year))
+    year_l = int(input())
+    print(is_leap(year_l))

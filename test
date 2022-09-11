@@ -1,0 +1,8 @@
+t1 = '11:22:43PM'
+print(t1[1] != '2')
+# print(int(t1[:2]))
+# print((str(int(t1[:2])+12))+(t1[2:]))
+
+The aim should never been said.
+the number 123 is less than055
+even decimal 0.66
